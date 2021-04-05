@@ -9,3 +9,11 @@ let pauseBtn = document.getElementById("pauseBtn")
 playBtn.addEventListener("click", function(){
     video.pause();
 });
+
+let freezeBtn = document.getElementById("freezeBtn")
+freezeBtn.addEventListener("mousedown", function(){
+    video.pause();
+});
+freezeBtn.addEventListener("mouseup", function(){
+    video.play();
+});
