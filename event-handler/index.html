@@ -10,12 +10,20 @@
 
 <body>
     <h1> JS Event Handling </h1>
-    <label for = "namaPengguna"> Create username :</label> 
-    <input type = "text" id="namaPengguna">
+    <label for="namaPengguna"> Create username :</label>
+    <input type="text" id="namaPengguna">
     <br>
-    <label for = "katalaluan"> Enter password: </label>
-    <input type = "text" id = "kataLaluan">
+    <label for="katalaluan"> Enter password: </label>
+    <input type="text" id="kataLaluan">
     <br>
+    <a onclick="manageLink" id="linkMetallica" hbref="https//www.metallica.com" target="_blank">Metallica</a>
+    <script>
+        function managelink() {
+            event.preventDefault();
+            alert("Stopped default event!");
+        }
+    </script>
     <script src="js/index.js"></script>
 </body>
+
 </html>
