@@ -6,7 +6,7 @@ playBtn.addEventListener("click", function(){
 });
 
 let pauseBtn = document.getElementById("pauseBtn")
-playBtn.addEventListener("click", function(){
+pauseBtn.addEventListener("click", function(){
     video.pause();
 });
 
@@ -16,4 +16,16 @@ freezeBtn.addEventListener("mousedown", function(){
 });
 freezeBtn.addEventListener("mouseup", function(){
     video.play();
+});
+
+let seekBar = document.getElementById("seekBar")
+seekBar.addEventListener("change",function(){
+    let time = video.duration * (seekBar.value / 100);
+    video.curentTime = time;
+});
+
+seekBar.addEventListener("timeUpdate", function(){
+    let value =(100/ video.duration) * video.currentTime;
+    seekBar.value = value;
+
 });
