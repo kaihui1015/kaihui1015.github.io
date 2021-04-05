@@ -11,7 +11,7 @@ function LoadUser(){
         let fn = document.getElementById("firstName");
         let ln = document.getElementById("lastName");
         let phone = document.getElementById("phone");
-        let img = document.getElementById("useImg");
+        let img = document.getElementById("userImg");
 
         fn.innerHTML = data.results[0].name.first;
         ln.innerHTML = data.results[0].name.last;
