@@ -1,4 +1,4 @@
-function findnearest(lat,lon){
+function findNearest(lat,lon){
     let d1 = haversine(lat, lon, 2.922561,101.650965); //DePulze
     let d2 = haversine(lat, lon, 3.073065,101.607787); //Sunway
     let d3= haversine(lat, lon, 3.158761, 101.714524); //KLCC
@@ -11,7 +11,7 @@ elLocate.addEventListener("click", function(){
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
             let elLat = document.getElementById("Lat");
-            let elLon = document.getElementById("Long");
+            let elLong = document.getElementById("Long");
             let elDepulze = document.getElementById("depulze");
             let elSunway = document.getElementById("sunway");
             let elKlcc = document.getElementById("klcc");
@@ -19,7 +19,7 @@ elLocate.addEventListener("click", function(){
             let userLat = position.coords.latitude;
             let userLong = position.coords.longitude;
 
-            let distance = findnearest(userlat, userlong);
+            let distance = findNearest(userlat, userlong);
 
             elLat.innerHTML = "Your latitude:" + userLat;
             elLong.innerHTML = "Your longtitude:" + userLong;
