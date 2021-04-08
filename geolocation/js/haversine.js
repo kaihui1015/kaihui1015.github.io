@@ -15,12 +15,12 @@ function haversine(lat1, lon1, lat2, lon2){
 // Converts numeric degrees to radians
 if (typeof Number.prototype.toRad == "undefined"){
     Number.prototype.toRad = function(){
-        
+
     } 
 }
 
 function roundVal(val){
     var doc = 2;
-    var result = Math.round(val)* Math.pow(10, dec))/Math.pow(10,dec);
+    var result = Math.round(val* Math.pow(10,dec))/Math.pow(10,dec);
     return result;
 }
