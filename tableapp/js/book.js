@@ -30,7 +30,6 @@ function BookNow(userName,userEmail,userPax,userRemarks){
     })
     .then((response) => response.json())
     .then(json => {
-      // Do something with object
-      console.log(json.bookingItem);
+        alert(json.bookingItem.name + "succesfully added!")
     });
 }
