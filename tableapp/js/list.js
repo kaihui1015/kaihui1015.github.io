@@ -20,11 +20,11 @@ fetch(url)
 
         let row = bookingNameList.insertRow(bookingNameList.row.length);
         row.insertCell(0).innerHTML = gId;
-        row.insertCell(0).innerHTML = gName;
-        row.insertCell(0).innerHTML = gEmail;
-        row.insertCell(0).innerHTML = gPax;
-        row.insertCell(0).innerHTML = gRemarks;
-        row.insertCell(0).innerHTML = "TBC";
+        row.insertCell(1).innerHTML = gName;
+        row.insertCell(2).innerHTML = gEmail;
+        row.insertCell(3).innerHTML = gPax;
+        row.insertCell(4).innerHTML = gRemarks;
+        row.insertCell(5).innerHTML = "TBC";
 
     }  
 });
