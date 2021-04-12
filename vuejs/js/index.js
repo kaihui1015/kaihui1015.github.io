@@ -37,6 +37,7 @@ let app4 = new Vue({
         ]
     }
 });
+    
 
 let app5 = new Vue({
     el: "#app5",
@@ -50,7 +51,8 @@ let app5 = new Vue({
     }
 });
 
-let app6 = new Vue({
+let app6 = new Vue({ 
+    //key in and change immediately// 
      el: "#app6",
      data: {
          message:"hello world~"
