@@ -23,7 +23,7 @@ fetch(url)
         let gRemarks = json.bookingItems[i].remarks;   
         let gId = json.bookingItems[i].id;
 
-        let row = bookingNameList.insertRow(bookingNameList.row.length);
+        let row = bookingNameList.insertRow(bookingNameList.rows.length);
         row.insertCell(0).innerHTML = gId;
         row.insertCell(1).innerHTML = gName;
         row.insertCell(2).innerHTML = gEmail;
