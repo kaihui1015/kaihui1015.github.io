@@ -13,11 +13,15 @@ bookNowBtn.addEventListener("click", function(){
     BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal);
 });
 
+//Add new data to google sheet
 function BookNow(userName,userEmail,userPax,userRemarks){
     let url = 'https://api.sheety.co/50585a22aa4a35c43762829099ed20ab/tableapp/bookingItems';
     let body = {
       bookingItem: {
-        ...
+        name: userName,
+        email: userEmail,
+        pax: userPax,
+        remarks: userRemarks
       }
     }
     fetch(url, {
