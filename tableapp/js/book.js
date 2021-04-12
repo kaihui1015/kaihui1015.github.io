@@ -15,9 +15,9 @@ bookNowBtn.addEventListener("click", function(){
 
 //Add new data to google sheet
 function BookNow(userName,userEmail,userPax,userRemarks){
-    let url = 'https://api.sheety.co/50585a22aa4a35c43762829099ed20ab/tableapp/bookingItems';
+    let url = 'https://api.sheety.co/50585a22aa4a35c43762829099ed20ab/tableapp/bookingitems';
     let body = {
-      bookingItem: {
+      bookingitem: {
         name: userName,
         email: userEmail,
         pax: userPax,
@@ -33,6 +33,6 @@ function BookNow(userName,userEmail,userPax,userRemarks){
     })
     .then((response) => response.json())
     .then(json => {
-        alert("ID:"+json.bookingItem.id+"," + json.bookingItem.name + "succesfully added!")
+        alert("ID:"+json.bookingitem.id+"," + json.bookingitem.name + "succesfully added!");
     });
 }
