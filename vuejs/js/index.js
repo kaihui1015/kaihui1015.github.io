@@ -19,6 +19,7 @@ let app3 = new Vue({
     data:{
         showIt: false
     }
+});
 
 let app4 = new Vue({
     el : "#app4",
