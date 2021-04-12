@@ -19,4 +19,20 @@ let app3 = new Vue({
     data:{
         showIt: false
     }
+
+let app4 = new Vue({
+    el : "#app4",
+    data:{
+        theList:[
+            {
+                text : "Learn HTML"
+            },
+            {
+                text :"Learn CSS"
+            },
+            {
+               text: "Learn Js" 
+            }
+        ]
+    }
 });
