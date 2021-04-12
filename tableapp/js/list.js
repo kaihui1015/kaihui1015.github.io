@@ -16,12 +16,12 @@ fetch(url)
         bookingNameList.deleleRow(k);
     }
 
-    for(let i=0; i < json.bookingItems.length; i++){
-        let gName = json.bookingItems[i].name;
-        let gEmail = json.bookingItems[i].email;
-        let gPax = json.bookingItems[i].pax; 
-        let gRemarks = json.bookingItems[i].remarks;   
-        let gId = json.bookingItems[i].id;
+    for(let i=0; i < json.bookingitems.length; i++){
+        let gName = json.bookingitems[i].name;
+        let gEmail = json.bookingitems[i].email;
+        let gPax = json.bookingitems[i].pax; 
+        let gRemarks = json.bookingitems[i].remarks;   
+        let gId = json.bookingitems[i].id;
 
         let row = bookingNameList.insertRow(bookingNameList.rows.length);
         row.insertCell(0).innerHTML = gId;
