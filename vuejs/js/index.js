@@ -1,4 +1,4 @@
-let app = new VTTCue({
+let app = new vue({
     el : "#app",
     data : {
         message:"Hello Vue!"
@@ -6,7 +6,7 @@ let app = new VTTCue({
 });
 
 let app2 = new vue({
-    el : "app2",
+    el : "#app2",
     data: {
         message :"loaded on " + new Date().toLocaleDateString(),
         linkURL: "https://www.malaysiakini.com/zh",
