@@ -58,8 +58,8 @@ function Deletebooking(id) {
     fetch(url, {
         method: 'DELETE',
     })
-        .then(() => {
-            alert("Order Id [" + id + "] is deleted!");
-            GetBooking();
-        });
+    .then((response) => response.json())
+    .then(() => {
+      console.log('Object deleted');
+    });
 }
