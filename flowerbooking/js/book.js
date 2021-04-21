@@ -40,6 +40,6 @@ function BookNow(userName, userEmail, userHandphone, userFlowerType, userFlowerQ
   })
     .then((response) => response.json())
     .then(json => {
-      alert("ID:" + json.userbooking.id + "," + json.userbooking.name + "succesfully added!");
+      alert( "ORDER NO (" + json.userbooking.id + ") by " + json.userbooking.name + "has succesfully added!");
     });
 }
