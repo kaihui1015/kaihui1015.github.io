@@ -8,7 +8,7 @@ bookNowBtn.addEventListener("click", function () {
 
   //shorter form
   let userHandphone = document.getElementById("userHp").value;
-  let userFlowerType = document.getElementById("fTypes").value;
+  let userFlowerType = document.getElementById("fType").value;
   let userFlowerQuantity = document.getElementById("fQuantity").value;
   let userDeliveryDate = document.getElementById("deliveryDate").value;
   let userRemarks = document.getElementById("userRemarks").value;
