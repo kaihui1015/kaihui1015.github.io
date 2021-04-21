@@ -53,18 +53,7 @@ function GetBooking() {
         });
 }
 
-function Deletebooking(id) {
-    let url = 'https://api.sheety.co/50585a22aa4a35c43762829099ed20ab/flowerbooking/userbookings/2';
-    fetch(url, {
-        method: 'DELETE',
-    })
-    .then((response) => response.json())
-    .then(() => {
-      console.log('Object deleted');
-    });
-}
-
-/* function Deletebooking(id) {
+ function Deletebooking(id) {
     let url = 'https://api.sheety.co/50585a22aa4a35c43762829099ed20ab/flowerbooking/userbookings/2';
     fetch(url, {
         method: 'DELETE',
@@ -73,4 +62,3 @@ function Deletebooking(id) {
             alert("Order Id [" + id + "] is deleted!");
             GetBooking();
         });
-} */
