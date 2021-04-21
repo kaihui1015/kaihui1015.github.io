@@ -62,3 +62,4 @@ function GetBooking() {
             alert("Order Id [" + id + "] is deleted!");
             GetBooking();
         });
+    }
