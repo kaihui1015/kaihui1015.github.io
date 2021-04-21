@@ -21,9 +21,9 @@ function GetBooking() {
                 let gName = json.userbookings[i].name;
                 let gEmail = json.userbookings[i].email;
                 let gHp = json.userbookings[i].hp;
-                let gFlower_type = json.userbookings[i].flower_type;
-                let gQuantity = json.userbookings[i].flower_quantity;
-                let gDeliveryDate = json.userbookings[i].delivery_date;
+                let gFlower_type = json.userbookings[i].flowerType;
+                let gQuantity = json.userbookings[i].flowerQuantity;
+                let gDeliveryDate = json.userbookings[i].deliveryDate;
                 let gRemarks = json.userbookings[i].remarks;
                 let gId = json.userbookings[i].id;
                 let btnId = "delete" + gId
