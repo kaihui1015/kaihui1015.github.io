@@ -25,9 +25,9 @@ function BookNow(userName, userEmail, userHandphone, userFlowerType, userFlowerQ
       name: userName,
       email: userEmail,
       hp: userHandphone,
-      flower_type: userFlowerType,
-      flower_quantity: userFlowerQuantity,
-      delivery_date: userDeliveryDate,
+      flowerType: userFlowerType,
+      flowerQuantity: userFlowerQuantity,
+      deliveryDate: userDeliveryDate,
       remarks: userRemarks
     }
   }
