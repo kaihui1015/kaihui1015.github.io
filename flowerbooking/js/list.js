@@ -63,3 +63,14 @@ function Deletebooking(id) {
       console.log('Object deleted');
     });
 }
+
+/* function Deletebooking(id) {
+    let url = 'https://api.sheety.co/50585a22aa4a35c43762829099ed20ab/flowerbooking/userbookings/2';
+    fetch(url, {
+        method: 'DELETE',
+    })
+        .then(() => {
+            alert("Order Id [" + id + "] is deleted!");
+            GetBooking();
+        });
+} */
