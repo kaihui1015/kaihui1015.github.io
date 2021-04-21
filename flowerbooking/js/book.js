@@ -21,7 +21,7 @@ bookNowBtn.addEventListener("click", function () {
 function BookNow(userName, userEmail, userHandphone, userFlowerType, userFlowerQuantity, userDeliveryDate, userRemarks) {
   let url = 'https://api.sheety.co/50585a22aa4a35c43762829099ed20ab/flowerbooking/userbookings';
   let body = {
-    bookingitem: {
+    userbooking: {
       name: userName,
       email: userEmail,
       hp: userHandphone,

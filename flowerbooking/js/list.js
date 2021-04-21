@@ -17,15 +17,15 @@ function GetBooking() {
                 bookingList.deleleRow(k);
             }
 
-            for (let i = 0; i < json.bookingitems.length; i++) {
-                let gName = json.bookingitems[i].name;
-                let gEmail = json.bookingitems[i].email;
-                let gHp = json.bookingitems[i].hp;
-                let gFlower_type = json.bookingitems[i].flower_type;
-                let gQuantity = json.bookingitems[i].flower_quantity;
-                let gDeliveryDate = json.bookingitems[i].delivery_date;
-                let gRemarks = json.bookingitems[i].remarks;
-                let gId = json.bookingitems[i].id;
+            for (let i = 0; i < json.userbookings.length; i++) {
+                let gName = json.userbookings[i].name;
+                let gEmail = json.userbookings[i].email;
+                let gHp = json.userbookings[i].hp;
+                let gFlower_type = json.userbookings[i].flower_type;
+                let gQuantity = json.userbookings[i].flower_quantity;
+                let gDeliveryDate = json.userbookings[i].delivery_date;
+                let gRemarks = json.userbookings[i].remarks;
+                let gId = json.userbookings[i].id;
                 let btnId = "delete" + gId
 
                 let row = bookingList.insertRow(bookingList.rows.length);
